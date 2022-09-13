@@ -1,0 +1,88 @@
+/* Write your code here. */
+* {
+  box-sizing: border-box;
+}
+
+.lettersCalculatorApp-bg-container {
+  height: 100vh;
+  background-image: linear-gradient(to right, #1d976c, #93f9b9);
+  display: flex;
+  padding: 30px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 1;
+}
+
+.lettersCalculatorApp-heading {
+  color: #fff;
+  font-size: 42px;
+}
+
+.input-label {
+  color: #fff;
+  padding-bottom: 4px;
+}
+
+.text-input {
+  border: 1px solid #fff;
+  background-color: transparent;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  color: #e4e7eb;
+  outline: none;
+}
+
+.no-of-letters {
+  background-color: #fff;
+  color: #219a6f;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.lettersCalculator-img {
+  height: 480px;
+}
+
+@media screen and (max-width: 991px) {
+  .lettersCalculator-img {
+    order: -1;
+    height: 300px;
+  }
+
+  .lettersCalculatorApp-bg-container {
+    flex-direction: column;
+  }
+
+  .lettersCalculatorApp-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .lettersCalculatorApp-heading {
+    text-align: center;
+    font-size: 36px;
+  }
+
+  .no-of-letters {
+    font-size: 24px;
+    padding: 20px;
+  }
+
+  .input-label {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .lettersCalculator-img {
+    height: 240px;
+  }
+
+  .lettersCalculatorApp-heading {
+    font-size: 30px;
+  }
+}
